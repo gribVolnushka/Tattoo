@@ -1,18 +1,45 @@
-.hero{
+.hero {
     min-height: 100vh;
     background-image: url("../../Image/Girl-hero-section.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding: 39px 0px;
+    padding: 39px 0;
 }
-header ul{
+
+@media screen and (max-width: 1320px) {
+    .hero {
+        background-image: unset;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero {
+        min-height: auto;
+    }
+}
+
+.header__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 62px;
 }
-.logo{
+
+@media screen and (max-width: 960px) {
+    .header__list {
+        gap: 35px;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .header__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.logo {
     display: flex;
     align-items: center;
     font-family: "Chela One", sans-serif;
@@ -20,47 +47,98 @@ header ul{
     font-size: 25px;
     line-height: calc(29 / 25);
 }
-header a:not(.logo){
+
+.header__link {
     font-size: 20px;
     line-height: calc(26 / 20);
 }
-.hero-content{
+
+.hero-content {
     padding: 30px 0;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.hero-content > div{
+
+@media screen and (width <= 768px) {
+    .hero-content {
+        border-bottom: 1px solid white;
+    }
+}
+
+.hero__container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.hero-content-wrapper{
+
+.hero-content__wrapper {
     width: 50%;
 }
-h1{
+
+@media screen and (max-width: 960px) {
+    .hero-content__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.hero-content__title {
     font-weight: 500;
     font-size: 80px;
     line-height: 1;
     margin-bottom: 11px;
 }
-.hero-content p{
+
+@media screen and (max-width: 1320px) {
+    .hero-content__title {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero-content__title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+}
+
+.hero-content__text {
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 22px;
 }
-.hero-content button{
+
+@media screen and (width <= 768px) {
+    .hero-content__text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+.hero-content__button {
     min-width: 245px;
     text-align: center;
     background-color: #DA3414;
     border-radius: 8px;
     font-size: 20px;
-    line-height: calc(30 /20);
+    line-height: calc(30 / 20);
     font-weight: 500;
     text-transform: uppercase;
-    padding: 25px 20px ;
+    padding: 25px 20px;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 960px) {
+    .hero-content__button {
+        min-width: 200px;
+        padding: 15px;
+        font-size: 16px;
+    }
 }
 
 

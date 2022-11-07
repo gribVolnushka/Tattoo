@@ -1,14 +1,54 @@
-.about{
-    padding: 173px 87px ;
+.about {
+    padding: 173px 87px;
 }
-.about > div{
+
+@media screen and (max-width: 1320px) {
+    .about {
+        padding: 100px  40px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about {
+        padding: 40px  40px;
+    }
+}
+
+.about__container {
     display: flex;
     gap: 100px;
     align-items: center;
 }
-.about img{
+
+@media screen and (max-width: 1320px) {
+    .about__container {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .about__container {
+        gap: 30px;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .about > div {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.about__image {
     width: 500px;
 }
+
+@media screen and (width <= 768px) {
+    .about__image {
+        width: 100%;
+    }
+}
+
 .outlined-title::after {
     content: " ";
     height: 1px;
@@ -17,14 +57,32 @@
     display: block;
     margin-top: 12px;
 }
-.about h2{
+
+@media screen and (width <= 768px) {
+    .outlined-title::after {
+       width: 100px;
+    }
+}
+
+.about__title {
     margin-bottom: 23px;
 }
-.about p{
+
+.about__text {
     font-size: 20px;
     line-height: 2;
     margin-bottom: 40px;
 }
-.about p:last-child{
+
+@media screen and (width <= 768px) {
+    .about__text {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+}
+
+.about__text-indent:last-child {
     margin-bottom: 0;
 }

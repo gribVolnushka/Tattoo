@@ -1,0 +1,44 @@
+.footer {
+    padding-top: 89px;
+    padding-bottom: 76px;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.footer__list{
+    display: flex;
+    gap: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .footer__list {
+        gap: 35px;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .footer__list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footer__link {
+    font-size: 20px;
+    line-height: calc(26/20);
+}
+
+.footer__logo {
+    font-family: 'Chela One', sans-serif;
+    font-size: 25px;
+    line-height: calc(29 / 25);
+    text-transform: uppercase;
+}

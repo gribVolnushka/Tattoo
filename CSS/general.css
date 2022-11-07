@@ -1,37 +1,101 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Roboto Slab", serif;
     background-color: #05090A;
     color: #FFFFFF;
+    background-image: url("../Image/background-wolf.svg"), url("../Image/background-scull.svg");
+    background-repeat: no-repeat;
+    background-position: left top 78vh, right bottom 75vh;
 }
-.container{
+
+.container {
     width: 1030px;
     margin-left: auto;
     margin-right: auto;
 }
-.container-lg{
+
+@media screen and (max-width: 1320px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (width <= 768px  ) {
+    .container {
+        width: 94%;
+    }
+}
+
+.container-lg {
     width: 1170px;
     margin-right: auto;
     margin-left: auto;
 }
-.outlined-title{
+
+
+@media screen and (max-width: 1320px) {
+    .container-lg {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container-lg {
+        width: 90%;
+    }
+}
+
+@media screen and (width <= 768px  ) {
+    .container-lg {
+        width: 94%;
+    }
+}
+
+.outlined-title {
     font-size: 30px;
     line-height: 1;
     letter-spacing: 1.5px;
 }
-.title{
+
+@media screen and (width <= 768px) {
+    .outlined-title {
+        font-size: 20px;
+    }
+
+    .outlined-title::after {
+        width: 90px;
+    }
+}
+
+.title {
     color: #DA3414;
     font-size: 30px;
     line-height: 1;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
-.center{
+
+@media screen and (width <= 768px) {
+    .title {
+        font-size: 25px;
+    }
+}
+
+
+.center {
     text-align: center;
 }
-.center::after{
+
+.center::after {
     margin-left: auto;
     margin-right: auto;
 }

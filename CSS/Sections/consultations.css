@@ -1,0 +1,107 @@
+.consultation {
+    padding-top: 52px;
+    padding-bottom: 47px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url("../../Image/Consultation-hand.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.consultation__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: calc(40 / 30);
+    letter-spacing: 0.05em;
+    color: #DA3414;
+    margin-bottom: 20px;
+}
+
+@media screen and (width <= 768px) {
+    .consultation__subtitle {
+        font-size: 20px;
+    }
+}
+
+.consultation__text {
+    width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 32px;
+}
+
+@media screen and (width <= 768px) {
+    .consultation__text {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+.consultation__form {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (width <= 768px) {
+    .consultation__form {
+        width: 100%;
+    }
+}
+
+.consultation__input {
+    padding: 10px 15px;
+    flex-grow: 1;
+
+}
+
+.consultation__input::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+}
+
+@media screen and (max-width: 960px) {
+    .consultation__input::placeholder {
+        font-size: 16px;
+    }
+}
+
+.consultation__button {
+    min-width: 100px;
+    padding: 10px 15px;
+    background-color: #DA3414;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: calc(20 / 18);
+}
+
+@media screen and (width <= 768px) {
+    .consultation__button{
+        min-width: 70px;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.consultation__paragraph {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+}
+
+@media screen and (width <= 768px) {
+    .consultation__paragraph{
+        width: 100%;
+        font-size: 14px;
+    }
+}

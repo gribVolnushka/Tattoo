@@ -1,0 +1,112 @@
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 178px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1320px) {
+    .contacts {
+        padding-bottom: 60px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .contacts {
+        padding-top: 0;
+    }
+}
+
+.contacts__wrapper-list {
+    flex-grow:1 ;
+    padding: 38px 28px 98px 219px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../Image/Contacts-gradient.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 1320px) {
+    .contacts__wrapper-list {
+        padding: 30px 10% 60px;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .contacts__wrapper-list {
+        padding: 30px 3% 60px;
+    }
+}
+
+
+.contacts__title {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.contacts__list {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    gap: 22px 130px;
+    justify-content: center;
+}
+
+@media screen and (width <= 768px) {
+    .contacts__list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacts__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.contacts__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+}
+
+@media screen and (width <= 768px) {
+    .contacts__text {
+        font-size: 16px;
+    }
+}
+
+.contacts__link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+}
+
+@media screen and (width <= 768px) {
+    .contacts__list {
+        font-size: 16px;
+    }
+}
+
+.contacts__list-links {
+    display: flex;
+    gap: 11px;
+}
+
+.contacts__image {
+    width: calc(50% - 53px);
+    padding-right: 53px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1320px) {
+    .contacts__image {
+        width: 100%;
+        padding-right: 0;
+    }
+}
